@@ -1,6 +1,5 @@
 import React from 'react';
-
-const CartFooter = () => {
+const CartFooter = ({legalStuff2}) => {
   return (
     <footer class="page-footer">
       <div class="container">
@@ -12,13 +11,10 @@ const CartFooter = () => {
       </div>
       <div class="footer-copyright">
         <div class="container">
-          &copy; Never
+          &copy; {legalStuff2.copyright} {legalStuff2.legalLine}
         </div>
       </div>
     </footer>
     )
 }
-
-
-
 export default CartFooter;
